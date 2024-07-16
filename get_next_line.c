@@ -6,7 +6,7 @@
 /*   By: daxferab <daxferna@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/20 12:43:01 by daxferab          #+#    #+#             */
-/*   Updated: 2024/06/17 21:22:37 by daxferab         ###   ########.fr       */
+/*   Updated: 2024/07/16 22:23:49 by daxferab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,13 +14,9 @@
 
 char	*get_next_line(int fd)
 {
-	void	*buf[1];
-	int		linenum;
+	static char	*remain;
+	char		*buffer;
 
-	if(fd == -1 || !buf)
-		return (NULL);
-	else
-	{
-		find_nl(fd, linenum);
-	}
+	read(fd, buffer, BUFFER_SIZE);
+	return (buffer);
 }

@@ -6,13 +6,9 @@
 /*   By: daxferab <daxferna@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/20 12:42:58 by daxferab          #+#    #+#             */
-/*   Updated: 2024/06/17 21:21:43 by daxferab         ###   ########.fr       */
+/*   Updated: 2024/07/16 21:56:46 by daxferab         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "get_next_line.h"
 
-int	find_nl(int fd, int linenum)
-{
-	
-}

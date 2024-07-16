@@ -1,10 +1,11 @@
 #include "get_next_line.h"
 
-int	main()
+int	main(void)
 {
-	int fd;
+	int	fd;
+
 	fd = open("file.txt", O_RDONLY);
-	for (int i = 0; i < 3; i++)
-		get_next_line(fd);
+	for (int i = 0; i <= 3; i++)
+		printf("%s", get_next_line(fd));
 	close(fd);
 }
