@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line_utils.c                              :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: daxferab <daxferna@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: daxferna <daxferna@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/20 12:42:58 by daxferab          #+#    #+#             */
-/*   Updated: 2024/07/16 21:56:46 by daxferab         ###   ########.fr       */
+/*   Updated: 2024/07/18 01:36:15 by daxferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 

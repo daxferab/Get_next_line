@@ -3,10 +3,10 @@
 /*                                                        :::      ::::::::   */
 /*   get_next_line.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: daxferab <daxferna@student.42madrid.com    +#+  +:+       +#+        */
+/*   By: daxferna <daxferna@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/20 12:43:01 by daxferab          #+#    #+#             */
-/*   Updated: 2024/07/16 23:11:02 by daxferab         ###   ########.fr       */
+/*   Updated: 2024/07/23 11:21:09 by daxferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,12 +16,18 @@ char	*get_next_line(int fd)
 {
 	static char	*remain;
 	char		*buffer;
+	char		*readfile;
 
 	if (remain && remain != "")
 	{
-		while (remain != 0)
+		while (remain != 0 && remain != "\n")
 		{
-			//concatenar el caracter al buffer
+			if (remain = "\n")
+				return(readfile);
+			else
+				readfile = remain;
+			remain++;
+			readfile++;
 		}
 	}
 	read(fd, buffer, BUFFER_SIZE);
