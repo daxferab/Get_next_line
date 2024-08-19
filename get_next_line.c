@@ -6,7 +6,7 @@
 /*   By: daxferna <daxferna@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/20 12:43:01 by daxferab          #+#    #+#             */
-/*   Updated: 2024/07/23 11:21:09 by daxferna         ###   ########.fr       */
+/*   Updated: 2024/08/19 21:30:49 by daxferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,21 +15,14 @@
 char	*get_next_line(int fd)
 {
 	static char	*remain;
+	char		*readbuf;
 	char		*buffer;
 	char		*readfile;
-
-	if (remain && remain != "")
+	
+	while (ft_findnl(remain) == 0)
 	{
-		while (remain != 0 && remain != "\n")
-		{
-			if (remain = "\n")
-				return(readfile);
-			else
-				readfile = remain;
-			remain++;
-			readfile++;
-		}
+		read(fd, readbuf, BUFFER_SIZE);
+		buffer = ft_concat(buffer, readbuf);
 	}
-	read(fd, buffer, BUFFER_SIZE);
 	return (buffer);
 }
