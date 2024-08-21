@@ -6,7 +6,7 @@
 /*   By: daxferna <daxferna@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/20 12:43:01 by daxferab          #+#    #+#             */
-/*   Updated: 2024/08/19 21:30:49 by daxferna         ###   ########.fr       */
+/*   Updated: 2024/08/21 19:22:49 by daxferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,7 +18,7 @@ char	*get_next_line(int fd)
 	char		*readbuf;
 	char		*buffer;
 	char		*readfile;
-	
+
 	while (ft_findnl(remain) == 0)
 	{
 		read(fd, readbuf, BUFFER_SIZE);
