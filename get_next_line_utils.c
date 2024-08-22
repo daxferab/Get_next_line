@@ -6,7 +6,7 @@
 /*   By: daxferna <daxferna@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/20 12:42:58 by daxferab          #+#    #+#             */
-/*   Updated: 2024/08/22 17:47:34 by daxferna         ###   ########.fr       */
+/*   Updated: 2024/08/22 20:40:00 by daxferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,9 +14,11 @@
 
 int	ft_findnl(char	*str)
 {
-	int i;
+	int	i;
 
 	i = 0;
+	if (str == "")
+		return (0);
 	while (str[i])
 	{
 		if (str[i] == '\n')
