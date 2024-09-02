@@ -6,7 +6,7 @@
 /*   By: daxferna <daxferna@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/20 12:42:58 by daxferab          #+#    #+#             */
-/*   Updated: 2024/08/22 20:40:00 by daxferna         ###   ########.fr       */
+/*   Updated: 2024/09/02 19:15:27 by daxferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,6 +45,8 @@ char	*ft_concat(char	*s1, char	*s2)
 	int		j;
 
 	s1s2 = malloc((ft_strlen(s1) + ft_strlen(s2) + 1) * sizeof(char));
+	if (!s1s2)
+		return (0);
 	i = 0;
 	j = 0;
 	while (s1[i])
@@ -62,4 +64,3 @@ char	*ft_concat(char	*s1, char	*s2)
 	}
 	return (s1s2);
 }
-
