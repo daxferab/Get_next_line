@@ -6,7 +6,7 @@
 /*   By: daxferna <daxferna@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/07/18 01:36:18 by daxferna          #+#    #+#             */
-/*   Updated: 2024/08/22 20:41:03 by daxferna         ###   ########.fr       */
+/*   Updated: 2024/09/05 19:40:17 by daxferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,6 +19,7 @@ int	main(void)
 
 	fd = open("file.txt", O_RDONLY);
 	for (int i = 0; i <= 3; i++)
+		//get_next_line(fd);
 		printf("%s", get_next_line(fd));
 	close(fd);
 }

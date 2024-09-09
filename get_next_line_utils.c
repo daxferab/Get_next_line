@@ -6,7 +6,7 @@
 /*   By: daxferna <daxferna@student.42madrid.com    +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2024/03/20 12:42:58 by daxferab          #+#    #+#             */
-/*   Updated: 2024/09/02 19:15:27 by daxferna         ###   ########.fr       */
+/*   Updated: 2024/09/09 22:16:40 by daxferna         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ int	ft_findnl(char	*str)
 	int	i;
 
 	i = 0;
-	if (str == "")
+	if (!str)
 		return (0);
 	while (str[i])
 	{
@@ -62,5 +62,6 @@ char	*ft_concat(char	*s1, char	*s2)
 		i++;
 		j++;
 	}
+	free(s1);
 	return (s1s2);
 }
